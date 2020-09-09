@@ -1,0 +1,45 @@
+<html>
+
+<body>
+    <p id="GFG"></p>
+    <script>
+        //bai 1
+        var str = "Hello world, welcome to the universe.";
+        var n = str.includes("worlds");
+        console.log(n);
+
+
+        //Bài 2. Viết hàm rút ngắn chuỗi bằng cách cắt ra 8 ký tự đầu của 1 chuỗi và thêm dấu ba chấm ở cuối chuỗi. 
+        //Ví dụ: shortenString('Xin chào các bạn') => Kết quả trả về là 'Xin chào...'
+
+
+        var str = "Xin chao cac ban moi hoc JavaSript";
+        var res = str.substring(0, 8) + '...';
+        console.log(res);
+
+        //Bài 3. Viết hàm có tác dụng biến 1 chuỗi thành chỉ viết hoa từ đầu tiên. 
+        // Ví dụ: capitalizeString('chÀo MừnG đẾn với techMaster') => Kết quả trả về là 'Chào Mừng Đến Với Techmaster'
+
+        var string = "con cho la me tui"
+        function vietHoaChuDauTien(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+        console.log(vietHoaChuDauTien(string));
+
+
+        function titleCase(str) {
+            var splitStr = str.toLowerCase().split(' ');
+            for (var i = 0; i < splitStr.length; i++) {
+                splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+            }
+            return splitStr.join(' ');
+        }
+        alert(titleCase("I'm a little tea pot"));
+
+        // Bài 4. Cho 1 chuỗi, hãy viết hàm có tác dụng sao chép đó chuỗi lên 10 lần.
+
+
+    </script>
+</body>
+
+</html>
